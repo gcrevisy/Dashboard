@@ -1,17 +1,16 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Dashboard.UI.Service;
+﻿using Dashboard.UI.Service;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dashboard.UI.Service.Tests
+namespace Dashboard.UI.Tests.Service
 {
-    [TestClass()]
-    public class GithubServiceTests
+    public class GithubServiceTest
     {
-        [TestMethod()]
+        [Test]
         public void GetBranchesTest()
         {
             GithubService service = new GithubService();
