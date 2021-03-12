@@ -15,13 +15,13 @@ steps:
 - task: DotNetCoreInstaller@0
   displayName: 'Use .NET Core sdk 2.2.103'
   inputs:
-    version: 2.2.103
+    version: 3.1.0
 
 # build all projects
 - task: DotNetCoreCLI@2
   displayName: dotnet build
   inputs:
-    projects: 'src/**/*.csproj'
+    projects: '**/*.csproj'
     arguments: '--configuration $(BuildConfiguration)'
 
 # Run all tests with "/p:CollectCoverage=true /p:CoverletOutputFormat=cobertura" to generate the code coverage file
