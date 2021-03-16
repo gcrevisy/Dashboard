@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dashboard.Core
+namespace Dashboard.Core.Model
 {
-    public class Class1
+    public class Utilisateur
     {
+        public string Login { get; set; }
     }
 }
